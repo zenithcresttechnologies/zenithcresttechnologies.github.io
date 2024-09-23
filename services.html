@@ -59,7 +59,8 @@
                         <div class="row flex-nowrap align-items-center justify-content-between">
                             <div class="col-auto header-fixed-col logo-wrapper">
                                 <a href="index.html" class="logo" title="PathSoft">
-                                    <img src="assets/img/capritech-logo-main.png" alt="Zenith_Logo"> </a>
+									<img src="assets/img/capritech-logo-main.png" id="desktop" style="width: 150px;" alt="Zenith_Logo">
+									<img src="assets/img/capritech/logo2.png" id="mobile" style="width: 150px;" alt="Zenith_Logo">                                 </a>
                             </div>
                             <div class="col-auto col-xl col-static header-fixed-col d-none d-xl-block">
                                 <div class="row flex-nowrap align-items-center justify-content-end">
@@ -137,15 +138,38 @@
 
                                 <div class="col-md-12 col-xl-8 col-sm-12 col-12 item content-display">
                                     <div class="overlay"></div>
-                                    <div id="content1" class="content active ">
-                                        <h2 class="iitem-heading item-heading-large ">MANAGED SECURITY SERVICES</h2>
+
+                                    <div id="content1" class="content active">
+                                        <div class="overlay"></div>
+                                        <h2 class="iitem-heading item-heading-large ">SOFTWARE DEVELOPMENT</h2>
+                                        <input type="text" value="./assets/img/capritech/services002.jpeg" hidden>
+                                        <div class="service-iitem-desc text">From web and mobile applications to cloud
+                                            and desktop solutions, our expert developers bring your software ideas to
+                                            life. We work with cutting-edge technologies to deliver scalable, custom
+                                            solutions tailored to your business needs.</div>
+                                    </div>
+
+                                    <div id="content2" class="content">
+                                        <div class="overlay"></div>
+                                        <h2 class="iitem-heading item-heading-large ">QA AUTOMATION ENGINEERING</h2>
+                                        <input type="text" value="./assets/img/capritech/services001.jpeg" hidden>
+                                        <div class="service-iitem-desc text">We understand your unique project
+                                            requirements and offer tailor-made automation solutions across API, web, and
+                                            mobile platforms. Our comprehensive approach ensures that your automation
+                                            seamlessly integrates into your CI/CD pipeline, providing continuous,
+                                            efficient testing and deployment.</div>
+                                    </div>
+
+                                    <div id="content3" class="content  ">
+                                        <h2 class="iitem-heading item-heading-large "> SECURITY SERVICES</h2>
                                         <input type="text" value="./assets/img/capritech/services001.jpeg" hidden>
                                         <div class="service-iitem-desc text">Protect your digital assets with our
                                             comprehensive security solutions. We offer vulnerability assessments,
                                             penetration testing, and compliance management to keep your software
                                             fortified against cyber threats.</div>
                                     </div>
-                                    <div id="content2" class="content">
+
+                                    <div id="content4" class="content">
                                         <div class="overlay"></div>
                                         <h2 class="iitem-heading item-heading-large ">DEVOPS SERVICES</h2>
                                         <input type="text" value="./assets/img/capritech/services002.jpeg" hidden>
@@ -154,7 +178,7 @@
                                             deployments, and foster a DevOps culture that drives efficiency and
                                             innovation.</div>
                                     </div>
-                                    <div id="content3" class="content">
+                                    <div id="content5" class="content">
                                         <div class="overlay"></div>
                                         <h2 class="iitem-heading item-heading-large ">QUALITY ASSURANCE AND TESTING
                                         </h2>
@@ -165,25 +189,6 @@
                                         </div>
                                     </div>
 
-                                    <div id="content4" class="content">
-                                        <div class="overlay"></div>
-                                        <h2 class="iitem-heading item-heading-large ">QA AUTOMATION ENGINEERING</h2>
-                                        <input type="text" value="./assets/img/capritech/services001.jpeg" hidden>
-                                        <div class="service-iitem-desc text">We understand your unique project
-                                            requirements and offer tailor-made automation solutions across API, web, and
-                                            mobile platforms. Our comprehensive approach ensures that your automation
-                                            seamlessly integrates into your CI/CD pipeline, providing continuous,
-                                            efficient testing and deployment.</div>
-                                    </div>
-                                    <div id="content5" class="content">
-                                        <div class="overlay"></div>
-                                        <h2 class="iitem-heading item-heading-large ">SOFTWARE DEVELOPMENT</h2>
-                                        <input type="text" value="./assets/img/capritech/services002.jpeg" hidden>
-                                        <div class="service-iitem-desc text">From web and mobile applications to cloud
-                                            and desktop solutions, our expert developers bring your software ideas to
-                                            life. We work with cutting-edge technologies to deliver scalable, custom
-                                            solutions tailored to your business needs.</div>
-                                    </div>
                                     <div id="content6" class="content">
                                         <div class="overlay"></div>
                                         <h2 class="iitem-heading item-heading-large ">SOFTWARE & IT SOLUTION</h2>
@@ -199,27 +204,27 @@
                                     <ul class="item-list">
                                         <li onclick="showContent(event, 'content1')" class="list active">
                                             <i class="material-icons">corporate_fare</i>
-                                            Security Services
+                                            Software Development
                                         </li>
                                         <li onclick="showContent(event, 'content2')" class="list">
                                             <i class="material-icons">support_agent</i>
-                                            Devops Service
+                                            QA Automation Engineering
                                         </li>
                                         <li onclick="showContent(event, 'content3')" class="list">
                                             <i class="material-icons">cloud_done</i>
-                                            Assurance & Testing
+                                            Security Services
                                         </li>
                                         <li onclick="showContent(event, 'content4')" class="list">
                                             <i class="material-icons">laptop_mac</i>
-                                            QA Automation
+                                            DevOps Services
                                         </li>
                                         <li onclick="showContent(event, 'content5')" class="list">
                                             <i class="material-icons">phone_android</i>
-                                            SoftWare Solutions
+                                            Quality Assurance and Testing
                                         </li>
                                         <li onclick="showContent(event, 'content6')" class="list">
                                             <i class="material-icons">tv</i>
-                                            IT Solutions
+                                            Software Solutions
                                         </li>
                                     </ul>
                                 </div>
@@ -263,19 +268,7 @@
                 </div>
                 <div class="footer-bottom">
                     <div class="container">
-                        <div class="row justify-content-between items">
-                            <div class="col-md-auto col-12 item">
-                                <nav class="footer-links">
-                                    <ul>
-                                        <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
-                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-md-auto col-12 item">
-                                <!-- <div class="copyright">© 2022 psFree. All rights reserved.</div> -->
-                            </div>
-                        </div>
+                 
                     </div>
                 </div>
             </footer><!-- End footer -->
