@@ -2012,6 +2012,10 @@ textarea {
     --heading-font-size: 2.25rem !important;
     --font-size: 1rem !important;
   }
+
+  .intro-item-type-1 {
+    background-position: 60% center !important;
+  }
 }
 
 @media only screen and (min-width: 567px) and (max-width: 900px) and (orientation: landscape) {
